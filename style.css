@@ -1,0 +1,422 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    color: white;
+}
+.main
+{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.sidebar{
+    height: 100vh;
+}
+.side-menu {
+    background-color: rgba(188, 183, 183, 0.1);
+    /* position: absolute; */
+    height: 15%;
+    width: 25%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px 0px 0px 0px;
+    /* margin-right: 0px; */
+}
+
+.home{
+    color: gray;
+    margin: 10px 30px;
+}
+
+.side-menu a{
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+    /* padding: 10px ; */
+}
+.side-menu a i{
+    font-size: 23px;
+    padding-right: 23px;
+}
+
+#home:nth-child(1) a{
+    color: white;
+}
+#search:hover a{
+    transition: all .4s linear 0s;
+}
+
+#search:hover a{
+    color: white;
+}
+
+.library{
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    width: 25%;
+    height: 73%;
+    background-color: rgba(188, 183, 183, 0.1);
+}
+.lib-logo:hover{
+    color: white;
+}
+.library .lib-logo{
+    padding:20px 10px;
+}
+.library  img{
+    height: 23px;
+    padding-right:16px ;
+}
+
+.library .lib-logo a{
+    padding: 10px 24px;
+    text-decoration: none;
+    color: gray;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s linear 0s;
+}
+.lib-logo:hover a{
+    color: white;
+}
+.library .library-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.library .icon i{
+    padding:10px ;
+    color: gray;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.library-icons .icon i:hover {
+    border-radius: 50%;
+    background-color: rgba(85, 85, 85, 0.1);
+    color: white;
+    
+}
+
+.library .lib-card-1{
+    height: 25%;
+    color: white;
+    background-color: rgba(188, 183, 183, 0.1);
+    margin: 10px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: center; */
+    padding: 10px 20px ;
+}
+.library .lib-card-1 h4{
+    padding: 10px 0px 0px;
+    /* font-size:14px ; */
+    font-weight: 700;
+    letter-spacing: .4;
+}
+.library .lib-card-1 p{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1;
+    padding: 10px 0px;
+}
+.library .lib-card-1 .btn-1{
+    margin-top:10px ;
+    padding: 5px 16px;
+    border-radius: 25px;    
+    font-weight: bold;
+    background-color: white;
+    font-size: 13px;    
+    cursor: pointer;
+    border: none;
+    color: black;
+
+}
+.lib-card-1 .btn-1:hover{
+    transform: scale(1.04,1.04);
+}
+
+.library .lib-card-2{
+    margin: 20px 10px;
+    background-color: rgba(188, 183, 183, 0.1);
+    border-radius: 10px;
+}
+
+.music-player{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    height: 65px;
+    background: #000000;
+}
+
+.main_body{
+    background-color:rgba(188, 183, 183, 0.1);
+    /* position: absolute; */
+    height: 89.4%;
+    width: 73.7%;
+    position: absolute;
+    top: 8px;
+    left:25.8%;
+    border-radius: 10px;
+    padding: 1rem;
+    overflow: auto;
+}
+.main_body .nav
+{
+    width: 100%;
+    height: 10%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.nav .btn-1{
+    margin:10px 5px;
+    padding: 5px 16px;
+    border-radius: 25px;    
+    font-weight: bold;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    color: black;
+}
+.nav .btn-1:hover{
+    transform: scale(1.04,1.04);
+}
+.nav .btns #btn-2{
+    background-color: rgba(188, 183, 183, 0.1);
+    color: white;
+}
+.nav .btns .btn-1 i{
+   padding-right: 4px;
+   /* padding-top: 2px; */
+   font-size: 15px;
+   font-weight: 100;
+}
+.nav .arrow
+{
+    margin: 15px 40px 0px 23px;
+    cursor: no-drop;
+}
+
+.nav .arrow img{
+    margin-right:10px;
+    border-radius: 50%;
+    padding:5px;
+    background-color:rgba(188, 183, 183, 0.1) ;
+    /* background-color: antiquewhite; */
+}
+
+.nav .btns{
+    /* margin:10px 0px 0px 0px; */
+    padding:10px 0px 10px 10px;
+    width: 31%;
+}
+
+.nav .btns #user{
+   /* margin-top: 20px;  */
+   margin-left: 7px;
+   font-size: 18px;
+   background-color: rgba(188, 183, 183, 0.1);
+   padding: 6px;
+   border-radius: 50%;
+    color: white;
+}
+.nav .btns #user:hover{
+    background-color: rgba(27, 27, 27, 0.6) ;
+}
+/* .main_body .all-card-con{
+    padding:1rem;
+} */
+.main_body .card{
+    margin: 1.3rem .8rem 1.3rem .8rem;
+    /* margin: 1rem; */
+    width: 200px;
+    background-color:rgba(76, 76, 76, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+}
+.card{
+    transition:backgroung-color 1s liner 0s;
+}
+.card:hover{
+    background-color: rgba(76, 76, 76, 0.3);
+}
+.card-con-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.card .card-title{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+.card .card-des{
+    font-size: 0.7rem;
+    line-height:14px ;
+    color: gray;
+}
+.footer-con{
+    /* display: flex; */
+    /* width: 100%; */
+    height:68%;
+    margin-top: 63px;
+    margin-left: 10px;
+}
+.footer{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    margin-bottom:20px ;
+}
+.left-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 60%;
+    line-height: 1.5;
+}
+.left-footer .company,.community,.usefullinks{
+    padding:30px 30px 30px 0px;
+}
+.left-footer  li{
+    padding: 3px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.left-footer li a{
+    color: rgb(182, 181, 181);
+    text-decoration: none;
+    font-size:0.9rem ;
+    font-weight: 500;
+}
+
+.left-footer li a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255,.9);
+}
+
+
+.right-footer{
+    display: flex;
+}
+.right-footer i{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(113, 112, 112, 0.2) ;
+    font-size: 1.1rem;
+    border-radius: 50%;
+}
+.right-footer i:hover{
+    background-color:  rgba(113, 112, 112, 1);
+}
+
+.footer-con .line{
+    border-top: 2px solid gray;
+    height: 100%;
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    /* margin-top:10px; */
+    padding:45px 10px 45px 10px ;
+}
+
+.line-1{
+    display: flex;
+}
+.line p{
+    margin-right: 22px;
+    font-size: .8rem;
+    font-weight: 500;
+    color: rgb(169, 169, 169);
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* width: 100%; */
+} 
+
+.music{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-pause img{
+    width: 5%;
+    height:30%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.img-5{
+    width: 8%;
+    height: 80%;
+}
+/* .music-range{
+} */
+.music-player .left{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:13.8%;
+}
+.music-player .left img{
+    height:4rem;
+    width: 4rem;
+}
+.music-player .left div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* padding-right: 15px; */
+}
+.music-player .left div .song_name{
+    text-decoration: none;
+    font-size: .8rem;
+}
+.music-player .left div .song_name:hover{
+    text-decoration: underline;
+}
+.music-player .left div .singer_name{
+    text-decoration: none;
+    color:#b3b3b3;
+    font-size: 11px;
+}
+.music-player .left div .singer_name:hover{
+    text-decoration: underline;
+}
+.music-player .left span{
+    width: 10%;
+    color: #b3b3b3;
+    font-size: 1.3rem;
+}
+
+/* ::-webkit-slider-thumb{
+    color: green;
+} */
